@@ -61,8 +61,11 @@ public class Restaurant {
 	}
 	
 	public int gettotalCost(List <String> itemNames) throws ItemNotFoundException {
-		//To do
-		//will implement in next commit
-		return 0;
+		int totalCost = 0;
+		for(String itemName : itemNames) {
+			Item item = findItemByName(itemName);
+			totalCost = totalCost + item.getPrice();
+		}
+		return totalCost;
 	}
 }
