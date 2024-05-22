@@ -59,4 +59,10 @@ public class Restaurant {
 	public String getName() {
 		return name;
 	}
+	
+	public int gettotalCost(List <String> itemNames) throws ItemNotFoundException {
+		//To do
+		//will implement in next commit
+		return 0;
+	}
 }
